@@ -260,3 +260,6 @@ footer {
     margin: 0em 0em 2em;
 }
 
+.footer__text {
+    font-size: .85em;
+}
