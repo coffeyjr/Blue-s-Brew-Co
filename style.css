@@ -1,6 +1,7 @@
 :root {
     --clr-primary: #233D4D;
     --clr-secondary: #619B8A;
+    --clr-button-second: #A1C181;
     --clr-accent: #FE7F2D;
     --clr-pop: #F2F2F2;
 
@@ -18,8 +19,9 @@ body {
 }
 
 h1 {
-    font-family: 'Silkscreen', cursive;
+    font-family: 'Loved by the King', cursive;
     margin: 1em 0em 1em 0em;
+    font-size: 1.85em;
 }
 
 img {
@@ -107,6 +109,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: end;
 }
 
 .scribble__img {
@@ -127,8 +130,133 @@ p {
     margin: .25em 0em .25em 0em;
 }
 
-.grid {
+.grid__layout  {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
-    
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 320px;
+    width: 100%;
+
+    padding: 1em;
+}
+
+.grid__title {
+    padding: 0;
+    margin: 0;
+
+    font-size: 3.125em;
+    color: var(--clr-primary);
+}
+
+.grid__text {
+    text-align: center;
+}
+
+.scribble__grid {
+    width: 75px;
+}
+
+.scribble__grid__sm {
+    width: 50px;
+}
+
+.pre__footer {
+    padding-top: 3em;
+}
+
+.pre__footer--scribble {
+    width: 100px;
+}
+
+.pre__footer--flex {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.pre__footer--title {
+    font-size: 1.75em;
+}
+
+.button--menu {
+    background-color: var(--clr-secondary);
+    color: #fff;
+    text-decoration: none;
+    padding: .65em;
+    width: 100%;
+
+    margin-bottom: .75em;
+}
+
+.button-event {
+    background-color: var(--clr-button-second);
+    color: #fff;
+    text-decoration: none;
+    padding: .65em;
+    width: 100%;
+
+    margin-bottom: .75em;
+}
+
+.button--visit {
+    background-color: var(--clr-accent);
+    color: #fff;
+    text-decoration: none;
+    padding: .65em;
+    width: 100%;
+}
+
+.button-event:hover,
+.button-event:focus,
+
+.button--menu:hover,
+.button--menu:focus,
+
+.button--visit:hover,
+.button--visit:focus{
+    opacity: .60;
+    transition: ease-in .1s;
+}
+
+footer {
+    margin: 3em 0em 1em 0em;
+}
+
+.social__img {
+    width: 40px;
+}
+
+.social__link + .social__link {
+    margin-left: 1.5em;
+}
+
+.social__icons {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0em 0em 2em;
+}
+
