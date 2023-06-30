@@ -193,6 +193,12 @@ p {
     font-size: 1.75em;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .button--menu {
     background-color: var(--clr-secondary);
     color: #fff;
@@ -262,4 +268,108 @@ footer {
 
 .footer__text {
     font-size: .85em;
+}
+
+/* Tablet Design */
+
+@media (min-width: 810px) {
+    .container {
+        width: 100%;
+
+        padding: 2em;
+    }
+
+    .hero__main-bg {
+        width: 100%;
+    }
+
+    .hero__title {
+        font-size: 5em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .row__story {
+        display: flex;
+    }
+
+    .section__text + .section__text {
+        margin-left: 1em;
+    }
+
+    .section__title {
+        margin-bottom: 0;
+    }
+
+    .scribble {
+        display: none;
+    }
+
+    .offerings_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .offer {
+        width: 48%;
+    }
+
+    .grid__layout{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .item:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .item:nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .item:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .pre__footer--title {
+        font-size: 3em;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .button--menu,
+    .button-event {
+        margin-bottom: 0;
+    }
+
+    .social__icons {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon {
+        width: auto;
+        margin: 0;
+    }
 }
